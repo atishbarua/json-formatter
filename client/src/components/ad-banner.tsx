@@ -81,8 +81,7 @@ export function AdPopup({ isOpen, onClose, onAdClick }: AdPopupProps) {
           className="adsbygoogle"
           style={{ display: "block", width: 300, height: 250 }}
           data-ad-client="ca-pub-6408060974768823"
-          data-ad-slot="POPUP_AD_UNIT_ID"
-          data-ad-format="auto"
+          data-ad-slot="6608671761"
         />
 
         <p className="text-xs text-muted-foreground text-center mt-4">

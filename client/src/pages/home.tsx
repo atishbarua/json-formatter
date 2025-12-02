@@ -237,7 +237,7 @@ export default function Home() {
               className="adsbygoogle"
               style={{ display: "block", width: 728, height: 90 }}
               data-ad-client="ca-pub-6408060974768823"
-              data-ad-slot="TOP_AD_UNIT_ID"
+              data-ad-slot="8740011081"
               data-ad-format="auto"
               data-full-width-responsive="true"
             />
@@ -367,7 +367,7 @@ Example:
                   className="adsbygoogle"
                   style={{ display: "block", width: 160, height: 600 }}
                   data-ad-client="ca-pub-6408060974768823"
-                  data-ad-slot="TOP_AD_UNIT_ID"
+                  data-ad-slot="5459241626"
                   data-ad-format="auto"
                   data-full-width-responsive="true"
                 />
@@ -381,7 +381,7 @@ Example:
               className="adsbygoogle"
               style={{ display: "block", width: 728, height: 90 }}
               data-ad-client="ca-pub-6408060974768823"
-              data-ad-slot="TOP_AD_UNIT_ID"
+              data-ad-slot="8740011081"
               data-ad-format="auto"
               data-full-width-responsive="true"
             />
