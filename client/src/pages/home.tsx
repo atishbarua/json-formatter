@@ -232,7 +232,15 @@ export default function Home() {
 
         <div className="flex-1 flex flex-col">
           <div className="flex justify-center py-4 px-4 border-b border-border bg-muted/30">
-            <AdBanner position="top" onAdClick={handleAdClick} />
+            {/* <AdBanner position="top" onAdClick={handleAdClick} /> */}
+            <ins
+              className="adsbygoogle"
+              style={{ display: "block", width: 728, height: 90 }}
+              data-ad-client="ca-pub-6408060974768823"
+              data-ad-slot="TOP_AD_UNIT_ID"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            />
           </div>
 
           <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-6">
@@ -354,13 +362,29 @@ Example:
               </div>
 
               <div className="hidden xl:flex flex-shrink-0">
-                <AdBanner position="sidebar" onAdClick={handleAdClick} />
+                {/* <AdBanner position="sidebar" onAdClick={handleAdClick} /> */}
+                <ins
+                  className="adsbygoogle"
+                  style={{ display: "block", width: 160, height: 600 }}
+                  data-ad-client="ca-pub-6408060974768823"
+                  data-ad-slot="TOP_AD_UNIT_ID"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"
+                />
               </div>
             </div>
           </main>
 
           <div className="flex justify-center py-4 px-4 border-t border-border bg-muted/30">
-            <AdBanner position="bottom" onAdClick={handleAdClick} />
+            {/* <AdBanner position="bottom" onAdClick={handleAdClick} /> */}
+            <ins
+              className="adsbygoogle"
+              style={{ display: "block", width: 728, height: 90 }}
+              data-ad-client="ca-pub-6408060974768823"
+              data-ad-slot="TOP_AD_UNIT_ID"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            />
           </div>
         </div>
 
