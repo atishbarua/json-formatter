@@ -358,7 +358,7 @@ Example:
       <footer className="border-t border-border py-4 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-sm text-muted-foreground">
           <p>JSON Formatter & Viewer</p>
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <a href="#" className="hover:text-foreground transition-colors">
               Privacy
             </a>
@@ -370,7 +370,7 @@ Example:
                 Admin
               </span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </footer>
 
