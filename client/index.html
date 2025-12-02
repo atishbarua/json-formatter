@@ -1,20 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>JSON Formatter & Viewer | Format, Validate, and View JSON</title>
-    <meta name="description" content="Free online JSON formatter, validator, and viewer. Prettify, minify, and explore JSON with syntax highlighting and collapsible tree view." />
-    <meta property="og:title" content="JSON Formatter & Viewer" />
-    <meta property="og:description" content="Format, validate, and view JSON with syntax highlighting and collapsible tree view." />
-    <meta property="og:type" content="website" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>JSON Formatter, Validator & Viewer Online | Free JSON Tools</title>
+  <meta name="description"
+    content="Free online JSON formatter, validator, and viewer for developers. Format, prettify, minify, and analyze JSON instantly with syntax highlighting and tree view." />
+  <link rel="canonical" href="https://jsonview.help" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JSON Formatter, Validator & Viewer" />
+  <meta property="og:description"
+    content="Format, validate, beautify, and view JSON with syntax highlighting and collapsible tree view." />
+  <meta property="og:url" content="https://jsonview.help" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://jsonview.help/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JSON Formatter & Viewer Online" />
+  <meta name="twitter:description" content="Free JSON formatter, validator, minifier, and tree viewer." />
+  <meta name="twitter:image" content="https://jsonview.help/og-image.png" />
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does a JSON formatter do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A JSON formatter automatically beautifies and structures JSON so that it is easy to read, debug, and analyze."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this JSON formatter free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the JSON formatter, validator, and viewer is completely free with no signup required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I validate JSON online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can validate JSON instantly using the built-in validator that checks for errors and malformed syntax."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- WebApp Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "JSON Formatter & Viewer",
+    "url": "https://jsonview.help",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "description": "A free online tool to format, validate, minify, and view JSON with syntax highlighting and developer-friendly features."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- SEO fallback content for crawlers -->
+  <h1 style="display:none;">
+    Free JSON Formatter, Validator & Viewer Online
+  </h1>
+  <p style="display:none;">
+    Use this fast and free JSON formatter to beautify, validate, minify, and analyze JSON data with a collapsible tree
+    viewer.
+  </p>
+
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
