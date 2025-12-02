@@ -11,6 +11,15 @@ interface AdBannerProps {
 }
 
 export function AdBanner({ position, onAdClick }: AdBannerProps) {
+
+  useEffect(() => {
+    try {
+      (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+      (window as any).adsbygoogle.push({});
+    } catch (e) {
+      console.error(e);
+    }
+  }, []);
   const dimensions = {
     top: "h-[90px] w-full max-w-[728px]",
     bottom: "h-[90px] w-full max-w-[728px]",
@@ -49,6 +58,15 @@ export function AdPopup({ isOpen, onClose, onAdClick }: AdPopupProps) {
       document.body.style.overflow = "";
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    try {
+      (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+      (window as any).adsbygoogle.push({});
+    } catch (e) {
+      console.error(e);
+    }
+  }, []);
 
   // Push ad after rendering
   useEffect(() => {
