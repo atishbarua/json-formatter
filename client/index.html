@@ -3,143 +3,152 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Primary SEO -->
-  <title>JSON Formatter, Validator & Viewer Online | Free JSON Tools</title>
+  <title>JSON Formatter | Free JSON Validator, Viewer & Minifier Online</title>
   <meta name="description"
-    content="Free online JSON formatter, validator, and viewer for developers. Format, prettify, minify, and analyze JSON instantly with syntax highlighting and tree view." />
+    content="Free online JSON formatter, validator, viewer & minifier. Format, beautify, validate, and view JSON data with syntax highlighting, error checking, and collapsible tree view." />
   <link rel="canonical" href="https://jsonview.help" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="JSON Formatter, Validator & Viewer" />
+  <meta property="og:title" content="JSON Formatter & Free Online Validator" />
   <meta property="og:description"
-    content="Format, validate, beautify, and view JSON with syntax highlighting and collapsible tree view." />
-  <meta property="og:url" content="https://jsonview.help" />
+    content="Beautify, validate, minify, and view JSON instantly with a clean interface and developer-friendly tools." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jsonview.help" />
   <meta property="og:image" content="https://jsonview.help/og-image.png" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="JSON Formatter & Viewer Online" />
-  <meta name="twitter:description" content="Free JSON formatter, validator, minifier, and tree viewer." />
+  <meta name="twitter:title" content="JSON Formatter & Validator Online" />
+  <meta name="twitter:description"
+    content="Format, validate, minify, and explore JSON with an interactive tree view and syntax highlighting." />
   <meta name="twitter:image" content="https://jsonview.help/og-image.png" />
 
   <link rel="icon" type="image/png" href="/favicon.png" />
 
-  <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- IMPORTANT: Consider reducing number of fonts to reduce page load -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-
-  <!-- FAQ Schema -->
-  <!-- FAQ Schema -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "What does a JSON formatter do?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A JSON formatter automatically beautifies and structures JSON so that it is easy to read, debug, and analyze."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is this JSON formatter free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, the JSON formatter, validator, and viewer is completely free with no signup required."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I validate JSON online?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can validate JSON instantly using the built-in validator that checks for errors and malformed syntax."
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "JSON Formatter",
+      "url": "https://jsonview.help",
+      "applicationCategory": "DeveloperTool",
+      "operatingSystem": "Any",
+      "description": "Format, validate, minify, and view JSON online with syntax highlighting and a collapsible tree view.",
+      "softwareVersion": "1.0",
+      "image": "https://jsonview.help/og-image.png",
+      "author": {
+        "@type": "Organization",
+        "name": "JSONView Help"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
       }
     }
-  ]
-}
-</script>
+  </script>
 
-  <!-- WebApplication Schema -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "JSON Formatter & Viewer",
-  "url": "https://jsonview.help",
-  "applicationCategory": "DeveloperApplication",
-  "operatingSystem": "Any",
-  "description": "A free online tool to format, validate, minify, and view JSON with syntax highlighting and developer-friendly features."
-}
-</script>
-
-  <!-- Tool Structured Data (SoftwareApplication) -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "JSON Formatter",
-  "url": "https://jsonview.help",
-  "applicationCategory": "DeveloperTool",
-  "operatingSystem": "Any",
-  "description": "Format, validate, and view JSON online for free with collapsible tree view and syntax highlighting.",
-  "genre": "Developer Tools",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "featureList": [
-    "Beautify JSON",
-    "Minify JSON",
-    "Validate JSON",
-    "Tree view with collapsible nodes",
-    "Syntax highlighting",
-    "Error detection"
-  ],
-  "softwareVersion": "1.0",
-  "author": {
-    "@type": "Organization",
-    "name": "JSONView Help"
-  },
-  "image": "https://jsonview.help/og-image.png",
-  "downloadUrl": "https://jsonview.help",
-  "screenshot": "https://jsonview.help/og-image.png"
-}
-</script>
-
-
-  <!-- Google Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6408060974768823"
     crossorigin="anonymous"></script>
-</head>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      /* Matches the light gray often used in React apps to blend the sections */
+      background-color: #fff;
+      color: #111827;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* SEO Hero Section Styles */
+    .seo-hero {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+      /* Reduced top padding significantly */
+    }
+
+    .seo-hero h1 {
+      font-size: 30px;
+      /* Slightly smaller for better balance */
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      line-height: 1.2;
+      color: #111;
+    }
+
+    .seo-hero p {
+      color: #4b5563;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0 auto 16px auto;
+      max-width: 600px;
+    }
+
+    /* A cleaner, less intrusive list of features */
+    .seo-features {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: #6b7280;
+      font-weight: 500;
+    }
+
+    .seo-features span {
+      display: flex;
+      align-items: center;
+    }
+
+    .seo-features span::before {
+      content: "•";
+      margin-right: 8px;
+      color: #d1d5db;
+    }
+
+    .seo-features span:first-child::before {
+      display: none;
+    }
+
+    /* Strong tag styling in features */
+    .seo-features strong {
+      color: #374151;
+      font-weight: 600;
+    }
+  </style>
+</head>
 
 <body>
 
-  <!-- SEO fallback content for crawlers -->
-  <h1 style="display:none;">
-    Free JSON Formatter, Validator & Viewer Online
-  </h1>
-  <p style="display:none;">
-    Use this fast and free JSON formatter to beautify, validate, minify, and analyze JSON data with a collapsible tree
-    viewer.
-  </p>
+  <section class="seo-hero">
+    <h1>
+      Free JSON Formatter, Validator & Viewer
+    </h1>
+
+    <p>
+      Format, validate, beautify, and minify JSON data instantly.
+      Includes syntax highlighting, error detection, and a collapsible tree view.
+    </p>
+
+    <div class="seo-features">
+      <span>Supports: <strong>Pretty Print</strong></span>
+      <span><strong>Minify</strong></span>
+      <span><strong>Tree View</strong></span>
+      <span><strong>Validation</strong></span>
+    </div>
+  </section>
 
   <div id="root"></div>
 
   <script type="module" src="/src/main.tsx"></script>
+
 </body>
 
 </html>

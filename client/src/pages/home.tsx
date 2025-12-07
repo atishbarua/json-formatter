@@ -208,8 +208,8 @@ export default function Home() {
         <header className="sticky top-0 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <FileJson className="h-6 w-6 text-primary" />
-              <h1 className="text-xl font-semibold">JSON Formatter</h1>
+              {/* <FileJson className="h-6 w-6 text-primary" /> */}
+              {/* <h1 className="text-xl font-semibold">JSON Formatter</h1> */}
             </div>
             <div className="flex items-center gap-2">
               <Button
@@ -238,8 +238,6 @@ export default function Home() {
               style={{ display: "block", width: 728, height: 90 }}
               data-ad-client="ca-pub-6408060974768823"
               data-ad-slot="8740011081"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
             />
           </div>
 
